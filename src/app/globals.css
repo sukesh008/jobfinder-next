@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  /* white family */
+  --white: #fff;
+  --lightest-gray2:#e1e1e1;
+  --lightest-gray:#FFFFF2;
+  --lighter-gray: #d6d6d6;
+  --light-gray: #727171;
+  --black: #000;
+  --light-black: #4e4e4e;
+
+  /* blue family */
+  --lighter-blue: #f2f6fb;
+  --grayish-blue: #6b7c93;
+  --lighter-blue: #f8fbff;
+  --primary-blue: #20C6B1;
+
+  /* others */
+  --red:#CD0505;
+}
+
+.home-main-container {
+  input {
+    border: none;
+    outline: none;
+    width: clamp(150px, 50vw, 300px);
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,9 @@
+.footer-main-container {
+  .footer-page {
+    font-size: 14px;
+    &:hover {
+      color: #1964f3;
+      cursor: pointer;
+    }
+  }
+}

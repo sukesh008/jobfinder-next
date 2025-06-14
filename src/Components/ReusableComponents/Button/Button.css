@@ -1,0 +1,86 @@
+
+.button{
+    display: flex;
+    
+    align-items: center;
+    column-gap: 10px;
+    color: #fff;
+    border:var(--primary-blue);  
+    border-radius: 5px;
+    padding:8px 15px;
+    font-size: 16px;
+    outline: none;
+    justify-content: center;
+    transition: all 0.2s ease;
+    font-weight: 600;
+    &:hover{
+        cursor: pointer;
+        /* opacity: 0.5; */
+        filter: brightness(80%);
+         
+    }
+}
+
+
+
+
+.primary{
+    background-color: var(--primary-blue);
+    border: none;
+}
+
+.secondary{
+    background-color: rgb(252, 251, 251);
+    color: var(--primary-blue);
+    &:hover{
+        background-color: rgb(252, 251, 251,0.9);
+    }
+   
+}
+
+.ternary{
+    border: 1px solid var(--black);
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.login-secondary{
+    background-color: #fff;
+    color: var(--primary-blue);
+    border:1px solid var(--primary-blue);
+     
+}
+
+ .login-secondary:hover {
+        background-color:var(--primary-blue);
+        color: #fff;
+        filter: brightness(100%);
+    }
+
+.login-secondary:hover .bx{
+    color: #ffffff !important;
+}
+
+.special-button{
+    background-color: rgb(238, 155, 0);
+    border: none;
+    &:hover{
+        background-color: rgb(238, 155, 0,0.9);
+    }
+}
+
+.google-button{
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--lighter-gray);
+}
+
+.Logout{
+    background-color: var(--red);
+    border: none;
+}
+
+.Continue{
+   background-color: var(--lighter-blue);
+   color: var(--primary-blue);
+}

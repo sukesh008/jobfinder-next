@@ -1,0 +1,101 @@
+.job-list-main-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  .job-list-header {
+    display: flex;
+    justify-content: space-between;
+    .job-list-no {
+      font-size: 25px;
+      font-weight: 600;
+    }
+    .job-list-sort {
+      color: rgb(114, 113, 113);
+    }
+  }
+  .job-list-content-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    .job-list-job-container {
+      border-radius: 10px;
+      overflow: hidden;
+      &:hover {
+        cursor: pointer;
+        background-color: var(--lighter-blue);
+      }
+      .job-list-job {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-radius: 10px;
+        .job-content-details {
+          display: flex;
+          flex-direction: column;
+          row-gap: 15px;
+          .job-header {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+            .job-header-title {
+              font-size: 20px;
+              font-weight: 500;
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+            .job-header-company-name {
+              color: var(--light-black);
+            }
+          }
+          .job-about {
+            display: flex;
+            column-gap: 15px;
+            .job-about-detail {
+              display: flex;
+              align-items: center;
+              column-gap: 5px;
+              font-size: 14px;
+              color: var(--light-gray);
+            }
+          }
+          .job-salary {
+            color: var(--primary-blue);
+            font-size: 17px;
+            font-weight: 500;
+          }
+        }
+        .apply-job {
+          color: var(--primary-blue);
+          display: flex;
+          align-items: end;
+        }
+      }
+    }
+    .selectedJob {
+      border: 1px solid var(--primary-blue);
+       background-color: var(--lighter-blue);
+      transition: all 0.2s ease;
+      box-shadow: 1px 1px 5px rgb(226, 226, 226);
+    }
+    .unselected-job{
+        border: 1px solid var(--lighter-gray);
+    }
+    .job-list-no-job-content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      text-align: center;
+      align-items: center;
+      background-color: #f2f6fb;
+      padding: 60px;
+      border-radius: 5px;
+      .job-list-no-job-title {
+        font-size: 20px;
+      }
+      .job-list-no-job-subtitle {
+        color: rgb(114, 113, 113);
+      }
+    }
+  }
+}

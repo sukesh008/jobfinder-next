@@ -1,0 +1,106 @@
+.job-details-main-container {
+  .job-details-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    .job-details-company-overview{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      border-bottom: 1px solid var(--lighter-gray);
+      padding-bottom: 15px;
+      .job-details-header{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        .job-header-title{
+          font-size: 20px;
+          font-weight: 500;
+        }
+        .job-header-company-name{
+          color: var(--light-black);
+        }
+      }
+      .job-about{
+        display: flex;
+        column-gap: 15px;
+        .job-about-detail{
+          display: flex;
+          align-items: center;
+          column-gap: 5px;
+          color: var(--light-gray);
+          font-size: 14px;
+        }
+      }
+      .job-salary{
+        font-size: 17px;
+        color: var(--primary-blue);
+        font-weight: 500;
+      }
+      .job-details-buttons{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+    }
+    .job-description-container{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      .job-description-header{
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .job-description-content{
+        height: 200px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--lighter-gray);
+         .description-detail-container{
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+            .description-detail-header{
+               color: var(--light-black);
+                font-size: 18px;
+               font-weight: 500;
+            }
+         }
+      }
+    }
+    .about-company-container{
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+      .about-company-header{
+         font-size: 18px;
+               font-weight: 500;
+      }
+      .about-company-content{
+        display: flex;
+        column-gap: 10px;
+      }
+    }
+  }
+  .job-details-no-details-container {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+    .job-details-no-details-content{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+        .no-job-details-title{
+            font-size: 20px;
+        }
+        .no-job-details-subtitle{
+            color: rgb(114, 113, 113);
+        }
+    }
+  }
+}
