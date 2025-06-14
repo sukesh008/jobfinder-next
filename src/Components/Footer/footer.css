@@ -2,8 +2,9 @@
   .footer-page {
     font-size: 14px;
     &:hover {
-      color: #1964f3;
+       color: var(--primary-blue);
       cursor: pointer;
+     
     }
   }
 }

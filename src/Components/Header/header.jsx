@@ -13,17 +13,16 @@ const Header = () => {
 
   return (
     <div className="flex items-center justify-between px-[100px] py-[15px] gap-x-[20px] text-[18px] border-b border-b-[var(--primary-blue)] sticky bg-[var(--lightest-gray)]/60 top-0  z-10 backdrop-blur-md">
-       <Link href="/">
         <span
           className="text-[25px] font-[700] text-[var(--primary-blue)] hover:cursor-pointer"
-    >
+         onClick={()=>router.push("/")}>
             JobFinder
         </span>
-       </Link>
+     
         <div className="w-[500px] flex justify-between items-center gap-x-[10px]">
           <>
             {path.map((data, index) => (
-              <Link href="/findjobs">
+              
               <span
                 className={`text-[17px] font-[500] hover:cursor-pointer hover:text-[var(--primary-blue)] ${
                   pathname === data.routePath
@@ -31,10 +30,10 @@ const Header = () => {
                     : "non-active"
                 }`}
                 key={index}
-              >
+                onClick={()=>router.push(data.routePath)}>
                 {data.name}
               </span>
-              </Link>
+          
             ))}
           </>
           <div className="flex gap-x-[20px] items-center">
